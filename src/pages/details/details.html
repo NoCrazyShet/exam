@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card text-center class="thingy" color="{{thing.color}}">
+      <ion-card-header>{{thing.name}}</ion-card-header>
+      <ion-card-content>
+        <p>{{thing.description}}</p>
+      </ion-card-content>
+      <button ion-button (click)="goToUpdate(thing)">Go to the Update Page man</button>
+      <button ion-button color="danger" (click)="deleteThing(thing.key)">Remove this item</button>
+    </ion-card>
+
+</ion-content>

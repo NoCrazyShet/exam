@@ -1,0 +1,17 @@
+page-is {
+  .thingy{
+
+
+  }
+
+  .thingy {
+    @include border-radius(50px);
+    @include width;
+    .card-content {
+      p {
+        @include font-color;
+      }
+    }
+  }
+
+}
